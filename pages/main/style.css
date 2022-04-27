@@ -1,4 +1,8 @@
-/* TODO fix footer overflow */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 :root {
     --color-light-xl: #FFFFFF;
@@ -14,10 +18,7 @@
     --color-primary-light: #FDDCC4;
 }
 
-.card:hover {
-    background-color: #C4C4C4;
-    box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
-}
+/* ============ layout styles ============= */
 
 header {
     z-index: 1;
@@ -116,11 +117,9 @@ nav ul {
     align-items: center;
 }
 
-.arrow {
-    width: 52px;
-    height: 52px;
-    border: 2px solid var(--color-primary);
-    border-radius: 50%;
+.card {
+    width: 270px;
+    height: 435px;
 }
 
 #help {
@@ -136,6 +135,8 @@ nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    align-content: space-between;
+    height: 281px;
 }
 
 .list-item {
@@ -145,7 +146,7 @@ nav ul {
 
 #donation {
     height: 462px;
-    background-color: var(--color-light-l)
+    background-color: var(--color-light-l);
 }
 
 .donation-content {
@@ -157,23 +158,272 @@ nav ul {
     height: 261px;
     width: 505px;
     margin-right: 30px;
+    margin-top: 12px;
 }
 
 .donation-text {
     width: 380px;
 }
 
-#footer {
+footer {
     height: 350px;
+    background-image: url(../../assets/images/footer-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .footer-content {
     display: flex;
-    justify-content: space-around;
-    padding: 40px 40px 0 40px;
+    justify-content: space-between;
+    padding: 40px 0 0 0;
 }
 
 .footer-content div {
     display: flex;
     flex-direction: column;
+}
+
+/* ============ other styles ============= */
+
+/* h2 */
+h2,
+h3 {
+    margin-bottom: 25px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 57px;
+    color: #C4C4C4;
+}
+
+/* h3 */
+h3 {
+    font-size: 35px;
+    line-height: 45px;
+    letter-spacing: 0.06em;
+    color: var(--color-dark-l);
+}
+
+h1 {
+    margin: 0;
+    font-family: 'Georgia';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 35px;
+    align-items: center;
+    letter-spacing: 0.06em;
+    color: var(--color-primary);
+}
+
+a {
+    text-decoration: none;
+}
+
+.subtitle {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1em;
+    color: var(--color-light-xl);
+}
+
+.paragraph-l {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: var(--color-dark-s);
+}
+
+
+.logo p {
+    margin: 10px 4px;
+}
+
+a.paragraph-l {
+    line-height: 55px;
+}
+
+.start-text p {
+    margin: 42px 0;
+}
+
+.start-text a {
+    display: block;
+    width: 207px;
+    padding: 15px;
+    border-radius: 100px;
+    text-align: center;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: 0.06em;
+    color: var(--color-dark-3xl);
+    background-color: var(--color-primary);
+}
+
+.about-text .paragraph-l {
+    color: var(--color-dark-xl);
+}
+
+.about-text p:last-child {
+    margin-top: 25px;
+}
+
+.pets-content h3 {
+    margin-bottom: 60px;
+}
+
+.arrow {
+    width: 52px;
+    height: 52px;
+    border: 2px solid var(--color-primary);
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+.card {
+    border-radius: 9px;
+    background-color: var(--color-light-s);
+}
+
+.card p {
+    margin: 25px 0 30px 0;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--color-dark-l);
+}
+
+.card a {
+    display: block;
+    width: 187px;
+    height: 52px;
+    padding: 15px 0;
+    margin: 0 auto;
+    border: 2px solid var(--color-primary);
+    border-radius: 100px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: 0.06em;
+    color: var(--color-dark-3xl);
+}
+
+/* .card:hover {
+    background-color: #C4C4C4;
+    box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+} */
+
+.pets-content>a {
+    display: block;
+    width: 261px;
+    margin: 60px auto 0 auto;
+    padding: 15px;
+    background-color: var(--color-primary);
+    border-radius: 100px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: 0.06em;
+    color: var(--color-dark-3xl);
+}
+
+.help-content {
+    text-align: center;
+}
+
+.help-content h3 {
+    margin-bottom: 60px;
+}
+
+.list p {
+    margin-top: 25px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    color: var(--color-dark-l);
+}
+
+.donation-content h3 {
+    margin-bottom: 20px;
+}
+
+.donation-text p {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17px;
+    letter-spacing: 0.06em;
+    color: var(--color-dark-l);
+}
+
+.donation-text a {
+    display: block;
+    width: 349px;
+    padding: 9px 15px;
+    margin: 22px 0 20px 0;
+    background: var(--color-primary);
+    border-radius: 9px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    color: var(--color-dark-l);
+}
+
+.donation-text a img {
+    width: 30px;
+    height: 23px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.donation-text span {
+    font-family: 'Arial';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--color-dark-m);
+}
+
+.footer-content h3 {
+    margin-top: 18px;
+    color: var(--color-light-xl);
+}
+
+.footer-content a {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    color: var(--color-primary);
+}
+
+.footer-contacts a img {
+    vertical-align: middle;
 }
