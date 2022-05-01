@@ -245,7 +245,6 @@ a {
     font-weight: 400;
     font-size: 15px;
     line-height: 24px;
-    letter-spacing: 0.014em;
     color: var(--color-dark-s);
 }
 
@@ -418,7 +417,7 @@ a.paragraph-l {
     display: block;
     width: 349px;
     padding: 9px 15px;
-    margin: 22px 0 20px 0;
+    margin: 22px 0 18px 0;
     background: var(--color-primary);
     border-radius: 9px;
     font-family: 'Georgia';
