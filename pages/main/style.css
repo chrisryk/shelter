@@ -32,6 +32,10 @@
     --color-primary-light: #FDDCC4;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* ============ layout styles ============= */
 
 header {
@@ -60,9 +64,9 @@ nav ul {
     top: 0;
     left: 0;
     right: 0;
-    background-image: url(../../assets/images/start-screen-gradient-background.png), url(../../assets/images/start-screen-background.jpg);
-    background-repeat: repeat, no-repeat;
-    background-size: auto, cover;
+    background-image: url(../../assets/images/start-screen-gradient-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 908px;
 }
 
@@ -188,7 +192,7 @@ nav ul {
 
 footer {
     height: 350px;
-    background-image: url(../../assets/images/footer-background.png);
+    background-image: url(../../assets/images/footer-gradient-background.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -478,6 +482,7 @@ a.paragraph-l {
 }
 
 .donation-text a:hover {
+    cursor: pointer;
     background-color: var(--color-primary-light);
 }
 
