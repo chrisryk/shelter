@@ -1,3 +1,17 @@
+@font-face {
+    font-family: 'Georgia';
+    src: url(../../assets/fonts/Georgia.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Arial';
+    src: url(../../assets/fonts/Arial.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -201,7 +215,10 @@ h3 {
     font-weight: 400;
     font-size: 44px;
     line-height: 57px;
-    color: #C4C4C4;
+}
+
+h2 {
+    color: var(--color-light-xl);
 }
 
 /* h3 */
@@ -252,7 +269,12 @@ a {
     margin: 10px 4px;
 }
 
+header nav ul li a:hover {
+    color: var(--color-light-s);
+}
+
 .active-link {
+    color: var(--color-light-s);
     padding-bottom: 4px;
     border-bottom: 3px solid var(--color-primary);
 }
@@ -279,6 +301,11 @@ a.paragraph-l {
     letter-spacing: 0.06em;
     color: var(--color-dark-3xl);
     background-color: var(--color-primary);
+    transition: 0.4s;
+}
+
+.start-text a:hover {
+    background-color: var(--color-primary-light);
 }
 
 .about-text .paragraph-l {
@@ -299,11 +326,25 @@ a.paragraph-l {
     border: 2px solid var(--color-primary);
     border-radius: 50%;
     background-color: transparent;
+    transition: 0.4s;
+}
+
+.arrow:hover {
+    border: 2px solid var(--color-primary-light);
+    background-color: var(--color-primary-light);
+    cursor: pointer;
 }
 
 .card {
     border-radius: 9px;
     background-color: var(--color-light-s);
+    transition: 0.4s;
+}
+
+.card:hover {
+    cursor: pointer;
+    background-color: var(--color-light-xl);
+    box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
 }
 
 .card p {
@@ -333,12 +374,13 @@ a.paragraph-l {
     line-height: 22px;
     letter-spacing: 0.06em;
     color: var(--color-dark-3xl);
+    transition: 0.4s;
 }
 
-/* .card:hover {
-    background-color: #C4C4C4;
-    box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
-} */
+.card:hover a {
+    border: 2px solid var(--color-primary-light);
+    background-color: var(--color-primary-light);
+}
 
 .pets-content>a {
     display: block;
@@ -354,6 +396,11 @@ a.paragraph-l {
     line-height: 22px;
     letter-spacing: 0.06em;
     color: var(--color-dark-3xl);
+    transition: 0.4s;
+}
+
+.pets-content>a:hover {
+    background-color: var(--color-primary-light);
 }
 
 .help-content {
@@ -427,6 +474,11 @@ a.paragraph-l {
     line-height: 23px;
     letter-spacing: 0.06em;
     color: var(--color-dark-l);
+    transition: 0.4s;
+}
+
+.donation-text a:hover {
+    background-color: var(--color-primary-light);
 }
 
 .donation-text a img {
