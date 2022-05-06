@@ -330,6 +330,7 @@ a.paragraph-l {
     border: 2px solid var(--color-primary);
     border-radius: 50%;
     background-color: transparent;
+    font-weight: bold;
     transition: 0.4s;
 }
 
