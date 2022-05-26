@@ -562,3 +562,166 @@ a.paragraph-l {
 .footer-locations a:nth-of-type(1) img {
     margin-bottom: 10px;
 }
+
+@media (max-width: 1279px) {
+    header,
+    .start-content,
+    .container {
+        max-width: 768px;
+    }
+
+    header {
+        margin: 30px 0 10px 0;
+        padding: 0 30px;
+    }
+
+    #start {
+        height: 1165px;
+    }
+
+    .start-content {
+        margin: 140px auto 0 auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .start-text {
+        margin: 10px 0;
+        width: 459px;
+    }
+
+    .start-text a {
+        margin: 0 auto;
+    }
+
+    .start-image {
+        position: absolute;
+        bottom: 0;
+        right: 30px;
+        width: 569px;
+        height: 593px;
+    }
+
+    .start-image img {
+        height: inherit;
+    }
+
+    #about {
+        height: 1048px;
+        margin-top: 1165px;
+    }
+
+    .about-content {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .about-text {
+        width: 429px;
+        height: auto;
+        margin: 0;
+    }
+
+    .about-image {
+        margin: 80px 0;
+      }
+
+    #pets {
+        height: 877px;
+    }
+
+    .pets-slider {
+        padding: 0 30px;
+    }
+
+    .cards {
+        width: 580px;
+    }
+
+    .card:nth-of-type(3) {
+        display: none;
+    }
+
+    #help {
+        height: 779px;
+    }
+
+    .list {
+        height: 450px;
+        padding: 0 40px 0 40px;
+    }
+
+    .list-item {
+        flex-basis: calc(100% / 3);
+    }
+
+    .list-item:nth-child(3) {
+        padding-right: 0;
+    }
+    
+    .list-item:nth-child(4) {
+        padding-right: 0;
+    }
+    
+    .list-item:nth-child(6) {
+        margin-left: 0;
+    }
+    
+    .list-item:nth-child(7) {
+        padding-right: 0;
+    }
+    
+    .list-item:nth-child(8) {
+        padding-right: 0;
+    }
+    
+    .list-item:nth-child(9) {
+        margin-right: 0;
+    }
+
+    #donation {
+        height: 783px;
+    }
+
+    .donation-content {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .donation-img {
+        margin-right: 0;
+        margin-top: 56px;
+    }
+
+    footer {
+        height: 639px;
+    }
+
+    .footer-content {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer-content div {
+        flex-basis: 42%;
+    }
+
+    .footer-content h3 {
+        margin-top: 0;
+    }
+
+    .footer-locations {
+        margin-right: 0;
+        padding: 0 14px;
+    }
+
+    .footer-img {
+        margin-top: 57px;
+    }
+
+    .footer-img img {
+        margin: 0 auto;
+        height: 310px;
+        width: 300px;
+    }
+}
